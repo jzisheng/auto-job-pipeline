@@ -20,7 +20,7 @@ if False:
 
     f = open(authPath,"r")
     userStr = f.readline()
-    pwStr = f.readline()
+    pwStr = f.readline()b
 
     username = driver.find_element_by_id('username')
     pw = driver.find_element_by_id('password')
@@ -40,7 +40,7 @@ def getTextBy(cstr_, class_str):
     return driver.find_element_by_xpath("//*[contains(@"+cstr_+", '"+class_str+"')]").text
 
 
-jobListsUrl = "https://www.linkedin.com/jobs/search/?geoId=103644278&keywords=%22software%20engineer%22%20%22new%20grad%22&location=United%20States"
+ jobListsUrl = "https://www.linkedin.com/jobs/search/?geoId=103644278&keywords=%22software%20engineer%22%20%22new%20grad%22&location=United%20States"
 
 driver.get(jobListsUrl)
 

@@ -13,7 +13,6 @@ app.set('view engine','ejs');
 mongoose.connect("mongodb://localhost:27017/accounts",
 		 { useNewUrlParser: true ,  useUnifiedTopology: true});
 
-
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(require("express-session")({
     secret:"secret",
