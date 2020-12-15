@@ -1,3 +1,9 @@
+import feedparser
+from newspaper import Article
+from time import sleep
+from json import dumps
+from kafka import KafkaProducer
+
 from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
