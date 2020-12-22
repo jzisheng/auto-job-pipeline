@@ -20,5 +20,7 @@ from analyticsApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('analytics/', views.index, name='index')
+    path('index/', views.index, name='index'),
+    path('analytics/',views.analytics, name='analytics')
+    
 ]
